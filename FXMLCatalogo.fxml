@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lafrao.FXMLCatalogoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Imagenes/Imagen3.jpg" />
+         </image>
+      </ImageView>
+      <Button blendMode="GREEN" layoutX="103.0" layoutY="154.0" mnemonicParsing="false" onAction="#EliminarP" prefHeight="25.0" prefWidth="79.0" text="Eliminar" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button blendMode="GREEN" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" onAction="#AgregarP" prefHeight="25.0" prefWidth="79.0" text="Agregar" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button blendMode="GREEN" layoutX="531.0" layoutY="357.0" mnemonicParsing="false" onAction="#Atras" text="Atras">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="NombreP" layoutX="14.0" layoutY="55.0" prefHeight="25.0" prefWidth="157.0" />
+      <TableView fx:id="Peliculas" layoutX="17.0" layoutY="291.0" prefHeight="101.0" prefWidth="481.0" />
+      <Button blendMode="GREEN" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#ModificarP" prefHeight="25.0" prefWidth="79.0" text="Modificar" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="30.0" prefHeight="17.0" prefWidth="149.0" text="NOMBRE DE LA PELICULA" />
+      <Label layoutX="18.0" layoutY="95.0" prefHeight="17.0" prefWidth="55.0" text="GENERO" />
+      <TextField fx:id="Genero" layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextArea fx:id="Descrip" layoutX="364.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button blendMode="GREEN" layoutX="103.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Buscar" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

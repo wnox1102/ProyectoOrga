@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lafrao.FXMLInicioController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="606.0" layoutX="-3.0">
+         <image>
+            <Image url="@../Imagenes/ImaFondoPantallaP.png" />
+         </image>
+      </ImageView>
+      <Button blendMode="OVERLAY" layoutX="24.0" layoutY="232.0" mnemonicParsing="false" onAction="#Cliente" prefHeight="44.0" prefWidth="96.0" text="CLIENTE" textFill="#0d0d0d" />
+      <Button blendMode="OVERLAY" layoutX="166.0" layoutY="307.0" mnemonicParsing="false" onAction="#Salir" prefHeight="44.0" prefWidth="96.0" text="SALIR " />
+      <Button blendMode="OVERLAY" layoutX="24.0" layoutY="307.0" mnemonicParsing="false" onAction="#Catalogo" prefHeight="44.0" prefWidth="96.0" text="CATALOGO" />
+      <Button blendMode="OVERLAY" layoutX="166.0" layoutY="232.0" mnemonicParsing="false" onAction="#Alquilar" prefHeight="44.0" prefWidth="96.0" text="ALQUILAR" />
+   </children>
+</AnchorPane>
