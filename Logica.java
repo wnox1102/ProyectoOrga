@@ -64,7 +64,7 @@ public class Logica {
             bw.write(IndexCedula.get(i).getNombre());
             bw.newLine();
             }
-          Collections.sort(IndexCedula, Cliente.OrdenCedula);
+          Collections.sort(IndexCedula,Cliente.StuRollno);
            bw.close();
         }
         else {
