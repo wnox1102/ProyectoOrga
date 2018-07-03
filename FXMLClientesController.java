@@ -109,7 +109,10 @@ public class FXMLClientesController implements Initializable {
     @FXML
     private void Consultar(ActionEvent e){
     
-    
+     if(Cedula.getText().isEmpty()==false){
+             System.out.println(l.BusquedaClientes(l.getIndexDatos(),Integer.parseInt(Cedula.getText())));
+        }
+        
      
         
     }

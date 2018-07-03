@@ -100,6 +100,30 @@ public class Logica {
         
     }
 
+//Metodo de busqueda binaria para clientes
+    
+    public int BusquedaClientes (ArrayList<Cliente> clientes,int cedula){
+        int nInferior=0;
+        int nSuperior=clientes.size()-1;
+        int mitad;
+        //convertir array a vector
+        Cliente[] VectorCliente=new Cliente[clientes.size()];
+        clientes.toArray(VectorCliente);
+         
+       while(nInferior<=nSuperior){
+           mitad=(nInferior+nSuperior)/2;
+           if(cedula==VectorCliente[mitad].getCedula()){
+               return mitad+1;
+           }
+           else if(cedula<VectorCliente[mitad].getCedula()){
+               nInferior=mitad+1;
+           }
+           else if(cedula>VectorCliente[mitad].getCedula()){
+               nSuperior=mitad-1;
+           }
+       }
+       return -1;
+    }
 
     public ArrayList<Cliente> getIndexDatos() {
         return IndexDatos;
