@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lafrao.FXMLAlquilarController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Imagenes/imagen6.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Nombre" layoutX="14.0" layoutY="55.0" />
+      <Label layoutX="21.0" layoutY="28.0" prefHeight="17.0" prefWidth="61.0" text="NOMBRE" textFill="#fefdff" />
+      <Label layoutX="21.0" layoutY="87.0" text="APELLIDO" textFill="#fefdff" />
+      <TextField fx:id="Apellido" layoutX="14.0" layoutY="111.0" />
+      <Label layoutX="21.0" layoutY="150.0" text="CEDULA" textFill="#fefdff" />
+      <TextField fx:id="Cedula" layoutX="14.0" layoutY="175.0" />
+      <DatePicker fx:id="Fecha" layoutX="243.0" layoutY="55.0" />
+      <DatePicker layoutX="243.0" layoutY="111.0" />
+      <Label layoutX="243.0" layoutY="28.0" prefHeight="17.0" prefWidth="117.0" text="FECHA  DE ALQUILER" textFill="#fefdff" />
+      <Label layoutX="242.0" layoutY="87.0" prefHeight="17.0" prefWidth="137.0" text="FECHA DE DEVOLUCION" textFill="#fefdff" />
+      <Label layoutX="21.0" layoutY="219.0" prefHeight="17.0" prefWidth="68.0" text="PELICULAS" textFill="#fefdff" />
+      <Button blendMode="MULTIPLY" layoutX="280.0" layoutY="166.0" mnemonicParsing="false" opacity="0.8" prefHeight="43.0" prefWidth="137.0" text="ALQUILAR PELICULA" textAlignment="CENTER" />
+      <Button blendMode="BLUE" layoutX="479.0" layoutY="352.0" mnemonicParsing="false" onAction="#Atras" opacity="0.5" text="ATRAS" />
+      <TableView fx:id="Al" layoutX="21.0" layoutY="241.0" prefHeight="117.0" prefWidth="418.0" />
+   </children>
+</AnchorPane>
